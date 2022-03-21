@@ -1,15 +1,8 @@
 ############################################################
-# CIS 521: Perceptrons Homework
-############################################################
-student_name = "Steven Fandozzi"
-
-############################################################
 # Imports
 ############################################################
 
 import perceptrons_data as data
-
-# Include your imports here, if any are used.
 
 ############################################################
 # Section 1: Perceptrons
@@ -102,7 +95,6 @@ class MulticlassPerceptron(object):
 ############################################################
 # Section 2: Applications
 ############################################################
-
 class IrisClassifier(object):
 
     def __init__(self, data):
@@ -190,22 +182,3 @@ class MysteryClassifier2(object):
         value = {}
         value['x1'] = instance[0] * instance[1] * instance[2]
         return self.p.predict(value)
-    
-############################################################
-# Section 3: Feedback
-############################################################
-
-feedback_question_1 = 4
-
-
-feedback_question_2 = """
-The most difficult part for me was getting
-a flexible data structure to handle the transition for weights
-from the BinaryPerceptron to the MulticlassPerceptron.
-"""
-
-feedback_question_3 = """
-Type your response here.
-My Favorite part was the dataset analysis followed with 
-feauture design for the later datasets. 
-"""
